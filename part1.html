@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" accept-charset="
+    "method="post" enctype="multipart/form­data">
+    <h2>Please Enter Your Details For Our Dating Website!</h2>
+    <div>
+        <fieldset>
+            <legend>Your Face</legend>
+            <label for="file">Your image:</label>
+            <input type="file" id=> <br>
+            <label for="preview">Image preview:</label>
+            <img id="preview"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="fullname">Name:</label>
+            <input type="text" name="fullname" placeholder="Your full name" required> <br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" required>
+            <label for="female">Female</label> <br>
+            <label for="age">Age:</label>
+            <input type="number" min="0" max="99" step="1" value="18" name="age" required> <br>
+            <label for="birthday">Date of birth:</label>
+            <input type="date" name="birthday"> <br>
+            <label for="color">Favorite color:</label>
+            <input type="color" name ="color"> <br>
+            <label for="countries">Which country:</label>
+            <select name="countries">
+                <option></option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="at">Australia</option>
+                <option value="tw">Taiwan</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="height">Height:</label>
+            <label for="short">Short</label>
+            <input type="range" name="height" min="0" max="100" step="5" value="50">
+            <label for="tall">Tall</label> <br>
+            <label for="salary">Salary:</label>
+            <label for="poor">Poor</label>
+            <input type="range" name="salary" min="0" max="100" step="5" value="50">
+            <label for="rich">Rich</label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required> <br>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" name="mobile"> <br>
+            <label for="address">Address:</label>
+            <textarea name="address"> </textarea> <br>
+            <label for="contact">Method to contat you:</label>
+            <input type="checkbox" name="contact" value="email">
+            <label for="email">Email</label>
+            <input type="checkbox" name="contact" value="whatsapp">
+            <label for="whatsapp">Whatsapp</label>
+            <input type="checkbox" name="contact" value="chat">
+            <label for="chat">In-app chat</label> <br>
+        </fieldset>
+
+        <input type = "submit" value = "Submit!">
+    </div>
+</form>
+</body>
+</html>
